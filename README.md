@@ -60,4 +60,3 @@
 function downloadVCard(){const v=['BEGIN:VCARD','VERSION:3.0','FN:桑澤 一郎','N:桑澤;一郎;;;','NICKNAME:Ichiro Kuwazawa','ORG:株式会社茅野自動車学校','TITLE:代表取締役','ADR;TYPE=WORK:;;長野県茅野市宮川5299;;;391-0013;Japan','TEL;TYPE=WORK,VOICE:0266-72-4111','TEL;TYPE=CELL:090-6000-2600','EMAIL:i.kuwazawa@gmail.com','URL:https://www.chinokyo.co.jp','X-SOCIALPROFILE;type=line:https://line.me/ti/p/~kuwazawa','X-SOCIALPROFILE;type=whatsapp:https://wa.me/819060002600','X-SOCIALPROFILE;type=facebook:https://facebook.com/i.kuwa','END:VCARD'].join('\r\n');const b=new Blob([v],{type:'text/vcard;charset=utf-8'});const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download='kuwazawa_biz.vcf';a.click();URL.revokeObjectURL(u)}
 </script>
 </body>
-</html>
